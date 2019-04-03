@@ -4,12 +4,19 @@
   "private": true,
   "dependencies": {
     "@babel/polyfill": "^7.4.3",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-static": "^5.0.0",
+    "nodemon": "^1.18.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   },
   "scripts": {
     "client": "parcel watch client/index.html",
-    "client:server": "parcel client/index.html"
+    "client:server": "parcel client/index.html",
+    "server": "nodemon server/index.js"
   },
   "eslintConfig": {
     "extends": "react-app"
