@@ -9,6 +9,10 @@ const app = new Koa()
 const router  = new Router()
 
 
+router.get('/api/hello/', (ctx) => {
+  ctx.body = 'Hello World!'
+})
+
 app.use(logger())
 app.use(bodyParser())
 app.use(router.routes())
